@@ -13,7 +13,7 @@ jobs:
       - name: step 2 - run k6 load test
         uses: grafana/k6-action@v0.3.1
         with: 
-          filename: modulo5/aws.js
+          filename: modulo5/grafana.js
 
       - run: ls & mkdir report & mv test.html report
       
