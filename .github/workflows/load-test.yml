@@ -15,10 +15,10 @@ jobs:
         with: 
           filename: modulo5/grafana.js
 
-      - run: ls & mkdir report & mv test.html report
+      - run: ls & mkdir reports & mv test.html reports
       
       - name: step 3 - upload artifact
         uses: actions/upload-artifact@v4
         with: 
           name: relatorio de testes de performance
-          path: report
+          path: reports
